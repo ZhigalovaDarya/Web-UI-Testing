@@ -29,7 +29,7 @@ public class CardFormTest {
 
         @BeforeEach
         void setUp() {
-            driver = new ChromeDriver();
+            WebDriver driver = new ChromeDriver();
         }
         @AfterEach
         void tearDown() {
