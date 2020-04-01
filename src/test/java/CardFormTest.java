@@ -16,14 +16,14 @@ public class CardFormTest {
 
         @BeforeAll
         static void setUpAll() {
-            System.setProperty("webdriver.chrome.driver", "Browser_plugins/chrome/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "Browser_plugins/chrome/chromedriver");
 
             if ((System.getProperty("os.name")).contains("mac")) {
-                System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver");
             } else if ((System.getProperty("os.name")).contains("Linux")) {
-                System.setProperty("webdriver.chrome.driver", "driver/Linux/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "driver/Linux/chromedriver");
             } else {
-                System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
+                System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver");
             }
         }
 
