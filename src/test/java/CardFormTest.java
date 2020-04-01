@@ -19,9 +19,9 @@ public class CardFormTest {
             System.setProperty("webdriver.chrome.driver", "Browser_plugins/chrome/chromedriver.exe");
 
             if ((System.getProperty("os.name")).contains("mac")) {
-                System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver.exe");
             } else if ((System.getProperty("os.name")).contains("Linux")) {
-                System.setProperty("webdriver.chrome.driver", "driver/linux/chromedriver");
+                System.setProperty("webdriver.chrome.driver", "driver/Linux/chromedriver.exe");
             } else {
                 System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
             }
