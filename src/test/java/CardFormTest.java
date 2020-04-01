@@ -16,7 +16,7 @@ public class CardFormTest {
 
         @BeforeAll
         static void setUpAll() {
-            System.setProperty("webdriver.chrome.driver", "Browser_plugins/chrome/chromedriver.exe");
+            System.setProperty("webdriver.chrome.driver", "drivers/chromedriver.exe");
 
             if ((System.getProperty("os.name")).contains("mac")) {
                 System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver");
