@@ -16,7 +16,7 @@ public class CardFormTest {
 
         @BeforeAll
         static void setUpAll() {
-            System.setProperty("webdriver.chrome.driver", "Browser_plugins/chrome/chromedriver");
+            System.setProperty("webdriver.chrome.driver", "./driver/Linux/chromedriver");
 
             if ((System.getProperty("os.name")).contains("mac")) {
                 System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver");
@@ -29,7 +29,7 @@ public class CardFormTest {
 
         @BeforeEach
         void setUp() {
-            WebDriver driver = new ChromeDriver();
+             driver = new ChromeDriver();
         }
         @AfterEach
         void tearDown() {
