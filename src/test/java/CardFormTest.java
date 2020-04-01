@@ -20,8 +20,8 @@ public class CardFormTest {
 
             if ((System.getProperty("os.name")).contains("mac")) {
                 System.setProperty("webdriver.chrome.driver", "driver/mac/chromedriver");
-            } else if ((System.getProperty("os.name")).contains("linux")) {
-                System.setProperty("webdriver.chrome.driver", "driver/linux/chromedriver");
+            } else if ((System.getProperty("os.name")).contains("Linux")) {
+                System.setProperty("webdriver.chrome.driver", "driver/Linux/chromedriver");
             } else {
                 System.setProperty("webdriver.chrome.driver", "driver/win/chromedriver.exe");
             }
