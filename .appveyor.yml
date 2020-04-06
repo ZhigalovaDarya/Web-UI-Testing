@@ -11,7 +11,7 @@ install:
   - ps: $App = Start-Process -FilePath java -ArgumentList "-jar ./artifacts/app-order.jar" -PassThru
 
 build_script:
-  - ps: ./gradlew test --info "-Dselenide.headless=true"  # стартуем Selenide в Headless-режиме (см.ниже)
+  - ps: ./gradlew test --info # "-Dselenide.headless=true"  стартуем Selenide в Headless-режиме (см.ниже), а для selenium прописали это в коде
 
 on_finish:
   - ps: Stop-Process -Id $App.Id  # оставливаем SUT

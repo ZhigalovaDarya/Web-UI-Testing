@@ -7,6 +7,7 @@ import org.junit.jupiter.params.provider.CsvFileSource;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.chrome.ChromeOptions;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
@@ -29,7 +30,9 @@ public class CardFormTest {
 
         @BeforeEach
         void setUp() {
-             driver = new ChromeDriver();
+            ChromeOptions chromeOptions = new ChromeOptions();
+            chromeOptions.addArguments("--headless");
+            driver = new ChromeDriver(chromeOptions);
         }
         @AfterEach
         void tearDown() {
